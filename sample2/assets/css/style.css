@@ -1,3 +1,10 @@
+/**
+* Template Name: Lonely
+* Updated: May 30 2023 with Bootstrap v5.3.0
+* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-lonely/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
 
 /*--------------------------------------------------------------
 # General
@@ -322,12 +329,11 @@ h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-
-    width: 100%;
-    height:100%;
-    background: url("../img/hero-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+  width: 100%;
+  height: 75vh;
+  background: url("../img/hero-bg.jpg") top center;
+  background-size: cover;
+  padding: 0 15px;
 }
 
 #hero h1 {
@@ -358,12 +364,11 @@ h6 {
   color: #d43076;
 }
 
-  @media (max-width: 480px) {
-    #hero {
-      background-size: contain;
-      background-position: center;
-    }
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
   }
+}
 
 @media (max-width: 768px) {
   #hero h1 {
