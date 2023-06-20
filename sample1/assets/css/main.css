@@ -1267,48 +1267,40 @@ h6 {
 /*--------------------------------------------------------------
 # RGB box
 --------------------------------------------------------------*/
-.box {
-  --border-size: 3px;
-  --border-angle: 0turn;
-   width: 60vmin;
-  height: 50vmin;
-  background-image: conic-gradient(from var(--border-angle), #213, #112 50%, #213), conic-gradient(from var(--border-angle), transparent 20%, #08f, #f03);
-  background-size: calc(100% - (var(--border-size) * 2)) calc(100% - (var(--border-size) * 2)), cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  -webkit-animation: bg-spin 3s linear infinite;
-          animation: bg-spin 3s linear infinite;
-}
-@-webkit-keyframes bg-spin {
-  to {
-    --border-angle: 1turn;
-  }
-}
-@keyframes bg-spin {
-  to {
-    --border-angle: 1turn;
-  }
-}
-.box:hover {
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+.block {
+	position: relative;
+	margin: 300px auto 0;
+	width: 720px;
+	height: 830px;
+	background: linear-gradient(0deg, #000, #272727);
 }
 
-@property --border-angle {
-  syntax: "<angle>";
-  inherits: true;
-  initial-value: 0turn;
+.block:before, .block:after {
+	content: '';
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+		#0000ff, #00ff00,#ffff00, #ff0000);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: steam 20s linear infinite;
 }
 
-.image-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
 }
 
-.image-container img {
-  max-width: 60%;
-  max-height: 60%;
+.block:after {
+	filter: blur(50px);
 }
-
