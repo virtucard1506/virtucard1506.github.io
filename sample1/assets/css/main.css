@@ -1270,8 +1270,8 @@ h6 {
 .box {
   --border-size: 4px;
   --border-angle: 0turn;
-   width: 60vmin;
-  height: 50vmin;
+   width: 80vmin;
+  height: 65vmin;
   background-image: conic-gradient(from var(--border-angle), #213, #112 50%, #213), conic-gradient(from var(--border-angle), transparent 20%, #08f, #f03);
   background-size: calc(100% - (var(--border-size) * 2)) calc(100% - (var(--border-size) * 2)), cover;
   background-position: center center;
