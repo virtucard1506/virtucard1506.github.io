@@ -51,6 +51,9 @@
 
                 <nav id="navbar" class="navbar">
                     <ul>
+                        <li><a href="Home.html" class="active">Home</a></li>
+                        <li><a href="services.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav><!-- .navbar -->
 
@@ -68,16 +71,14 @@
 
             <!-- ======= End Page Header ======= -->
             <div class="page-header d-flex align-items-center">
-                <div class="container position-relative">
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-lg-6 text-center">
+                <div class="container">
+ 
+                        
                             <h2>VirtuCard</h2>
                             <p></p>
 
                             <a class="cta-btn" a href="">Back to Main Page</a>
 
-                        </div>
-                    </div>
                 </div>
             </div><!-- End Page Header -->
             <style>
@@ -97,29 +98,66 @@
 
                         .header-social-links a i {
                             font-size: 50px; /* Adjust the font size as needed */
+                            color: grey;
+                            transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
                         }
+
+                            .header-social-links a i:hover {
+                                color: white;
+                                text-shadow: 0 0 10px white; /* Adjust the glow effect as desired */
+                            }
+
             </style>
             <!-- ======= About Section ======= -->
             
             <section id="about" class="about">
-                <div class="container">
-
-                    <div class="row gy-4 justify-content-center">
 
 
-                        <div style="width: 50%;">
-                            <img src="assets/img/profile-img.jpg" alt="" style="max-width: 100%; border-radius: 50%;">
-                        </div>
+                <style>
+                    .container {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                    }
 
+                    .profile-img {
+                        width: 200px; /* Adjust the size as needed */
+                        height: 200px;
+                        border-radius: 50%;
                         
+                    }
+
+                    .info-container {
+                        margin-top: 20px; /* Adjust the margin as needed */
+                        margin-left: 20px;
+                        text-align: left; /* Add this line to align the text to the left */
+                    }
+
+                    .list-container {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: left;
+                    }
+
+                        .list-container ul {
+                            text-align: left;
+                        }
 
 
+                </style>
+           
+                <div class="container">
+                    <img src="assets/img/profile-img.jpg" alt="" class="profile-img">
 
-                        <h2>Founder of VirtuCard</h2>
-                        <p class="fst-italic py-3">
-                        </p>
-                        <div class="row">
-                            <div class="col-lg-6">
+                    <br />
+                    <div class="box">
+                        <div class="info-container">
+                            <h2>Founder of VirtuCard</h2>
+                            
+                            <div class="row">
+                                
                                 <ul class="list-unstyled">
                                     <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
                                     <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+60 123456789</span></li>
@@ -133,110 +171,23 @@
                                             <a href="" class="instagram"><i class="bi bi-instagram"></i></a>
                                             <a href="" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
                                         </div>
-
                                     </li>
                                 </ul>
-
+                                
                             </div>
                         </div>
                     </div>
+                   
                 </div>
-            </section><!-- End About Section -->
-    </div>
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-
-            <div class="section-header">
-                <h2>Features</h2>
-                <p>What can you add ?</p>
-            </div>
-
-            <h2>1.Features of your company, your produce or even your unforgettable memories.</h2>
-
-
-            <div class="slides-3 swiper">
-                <div class="swiper-wrapper">
-
-                    <div class="swiper-slide">
-                        <div class="update-wrap">
-                            <div class="update-item">
-                                <img src="assets/img/updates/update-1.jpg" class="update-img" alt="">
-                                <h3>Main class room update</h3>
-                                <p>
-                                    A bigger projector screen has been added to the main class. It can enhance visibility, making it easier for students to see the materials being presented. With a larger screen, students in the back of the class can see the information just as easily as those in the front.
-                                </p>
-                            </div>
-                        </div>
-                    </div><!-- End update item -->
-
-
-                    <div class="swiper-slide">
-                        <div class="testimonial-item">
-                            <div class="stars">
-                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                            </div>
-                            <p>
-                                I really like how the digital card was design !!!
-                            </p>
-                            <div class="profile mt-auto">
-                                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                                <h3>Jena Karlis</h3>
-
-                            </div>
-                        </div>
-                    </div><!-- End testimonial item -->
-
-                    <div class="swiper-slide">
-                        <div class="update-wrap">
-                            <div class="update-item">
-                                <img src="assets/img/updates/1.jpg" class="update-img" alt="">
-                                <h3>The Date at the beach with Me & U</h3>
-                            </div>
-                        </div>
-                    </div><!-- End update item -->
-
-                    <div class="swiper-slide">
-                        <div class="update-wrap">
-                            <div class="update-item">
-                                <img src="assets/img/updates/2.jpg" class="update-img" alt="">
-                                <h3>Bluetooth headphone</h3>
-                            </div>
-                        </div>
-                    </div><!-- End update item -->
-
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
-
-        </div>
-
-        <div class="container">
-            <h2>2.Map to your store</h2>
-        </div>
-
-        <div data-aos="fade-up" class="container">
-            <iframe style="border:0; width: 100%; height: 350px;" src="https://maps.google.com/maps?q=优良教育学院, Jalan Iris 23, Bandar Indahpura, Kulai, Johor&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" allowfullscreen></iframe>
-            <style>
-                .mapouter {
-                    position: relative;
-                    text-align: right;
-                    height: 510px;
-                    width: 770px;
-                }
-            </style>
-        </div>
-        <br></br>
-    </section><!-- End Testimonials Section -->
-    </div>
-
-    </main><!-- End #main -->
+            </section>
+        </main>
 
     <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
     <div id="preloader">
         <div class="line"></div>
     </div>
+
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -248,6 +199,6 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
 
-</body>
+    </body>
 
 </html>

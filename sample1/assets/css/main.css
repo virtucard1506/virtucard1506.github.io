@@ -1268,7 +1268,7 @@ h6 {
 # RGB box
 --------------------------------------------------------------*/
 .box {
-  --border-size: 3px;
+  --border-size: 4px;
   --border-angle: 0turn;
    width: 60vmin;
   height: 50vmin;
